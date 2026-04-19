@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="Latay ng Karangalan — Pangkat ng Produksyon at Mga Credits." />
+  <title>Pangkat ng Produksyon — Latay ng Karangalan</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" role="navigation" aria-label="Pangunahing Navigation">
+
+    <div class="nav__logo">
+      Latay ng Karangalan
+      <span>Art Appreciation</span>
+    </div>
+
+    <button
+      class="nav__burger"
+      id="navBurger"
+      aria-label="Buksan ang menu"
+      aria-expanded="false"
+      aria-controls="navDrawer"
+    >
+      <span class="nav__burger-line"></span>
+      <span class="nav__burger-line"></span>
+      <span class="nav__burger-line"></span>
+    </button>
+
+  </nav>
+
+  <!-- Nav Drawer -->
+  <div class="nav__drawer" id="navDrawer" role="dialog" aria-label="Navigation Menu">
+
+    <span class="nav__section-label">Page</span>
+
+    <a href="index.html" class="nav__link">
+      Home Page
+    </a>
+
+    <a href="story.html" class="nav__link">
+      Script &amp; Characters Page
+    </a>
+
+    <a href="production.html" class="nav__link">
+      Production Team Page
+    </a>
+
+    <div class="nav__drawer-divider"></div>
+    <span class="nav__section-label">Page Contents</span>
+
+    <a href="#team" class="nav__link">
+      Production Team
+    </a>
+
+    <a href="#credits" class="nav__link">
+      Credits
+    </a>
+
+  </div>
+
+  <!-- Nav Backdrop -->
+  <div class="nav__backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+
+  <!-- PAGE WRAPPER -->
+  <div class="page-wrapper">
+
+    <!-- Page Banner -->
+    <div class="page-banner" aria-label="Pangkat ng Produksyon">
+      <div class="page-banner__bg" aria-hidden="true"></div>
+      <div class="page-banner__overlay" aria-hidden="true"></div>
+      <div class="page-banner__content">
+        <p class="page-banner__label">Page 3</p>
+        <h1 class="page-banner__title">Production<br>Team</h1>
+      </div>
+    </div>
+
+    <!-- Page Tabs -->
+    <nav class="page-tabs" aria-label="Mga seksyon ng pahina">
+      <a href="#team"    class="page-tab is-active">Production Team</a>
+      <a href="#credits" class="page-tab">Credits</a>
+    </nav>
+
+
+    <!-- PRODUCTION TEAM SECTION -->
+    <section class="section" id="team" aria-label="Pangkat ng Produksyon">
+
+      <header class="section__header reveal">
+        <p class="section__eyebrow">Sa Likod ng Kamera</p>
+        <h2 class="section__title">Production Team</h2>
+        <div class="section__ornament" aria-hidden="true">
+          <div class="orn-line"></div>
+          <div class="orn-diamond"></div>
+          <div class="orn-line orn-line--rev"></div>
+        </div>
+      </header>
+
+      <!-- Directors -->
+      <div class="prod-group reveal">
+        <p class="prod-group__label">Directors</p>
+        <div class="prod-grid prod-grid--2">
+
+          <div class="prod-card">
+            <div class="prod-card__image-wrap">
+              <img
+                class="prod-card__image"
+                src="assets/images/anakNgBruha.jpg"
+                alt="Director"
+                loading="lazy"
+              />
+            </div>
+            <p class="prod-card__name">Jillian Petacio</p>
+            <p class="prod-card__role">Director</p>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card__image-wrap">
+              <img
+                class="prod-card__image"
+                src="assets/images/editor.jpg"
+                alt="Director"
+                loading="lazy"
+              />
+            </div>
+            <p class="prod-card__name">Mhyla Ocumen</p>
+            <p class="prod-card__role">Director</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Editors -->
+      <div class="prod-group reveal">
+        <p class="prod-group__label">Editors</p>
+        <div class="prod-grid prod-grid--2">
+
+          <div class="prod-card">
+            <div class="prod-card__image-wrap">
+              <img
+                class="prod-card__image"
+                src="assets/images/editor.jpg"
+                alt="Editor 1"
+                loading="lazy"
+              />
+            </div>
+            <p class="prod-card__name">Mhyla Ocumen</p>
+            <p class="prod-card__role">Editor 1</p>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card__image-wrap">
+              <img
+                class="prod-card__image"
+                src="assets/images/tatay.jpg"
+                alt="Editor 2"
+                loading="lazy"
+              />
+            </div>
+            <p class="prod-card__name">Lewis Alfred Tinio</p>
+            <p class="prod-card__role">Editor 2</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Writers -->
+      <div class="prod-group reveal">
+        <p class="prod-group__label">Writers</p>
+        <div class="prod-grid prod-grid--4">
+
+          <div class="prod-card">
+            <div class="prod-card__image-wrap">
+              <img
+                class="prod-card__image"
+                src="assets/images/mara.jpg"
+                alt="Writer 1"
+                loading="lazy"
+              />
+            </div>
+            <p class="prod-card__name">Maurene Callanta</p>
+            <p class="prod-card__role">Writer 1</p>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card__image-wrap">
+              <img
+                class="prod-card__image"
+                src="assets/images/sara.jpg"
+                alt="Writer 2"
+                loading="lazy"
+              />
+            </div>
+            <p class="prod-card__name">Krisha Joyce Carpio</p>
+            <p class="prod-card__role">Writer 2</p>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card__image-wrap">
+              <img
+                class="prod-card__image"
+                src="assets/images/lira.jpg"
+                alt="Writer 3"
+                loading="lazy"
+              />
+            </div>
+            <p class="prod-card__name">Reynalyn Valenciana</p>
+            <p class="prod-card__role">Writer 3</p>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card__image-wrap">
+              <img
+                class="prod-card__image"
+                src="assets/images/amoNiMaraSaWork2.jpg"
+                alt="Writer 4"
+                loading="lazy"
+              />
+            </div>
+            <p class="prod-card__name">Christine Joy Florendo</p>
+            <p class="prod-card__role">Writer 4</p>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card__image-wrap">
+              <img
+                class="prod-card__image"
+                src="assets/images/editor.jpg"
+                alt="Writer 4"
+                loading="lazy"
+              />
+            </div>
+            <p class="prod-card__name">Mhyla Ocumen</p>
+            <p class="prod-card__role">Writer 5</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Cinematographers -->
+      <div class="prod-group reveal">
+        <p class="prod-group__label">Cinematographers</p>
+        <div class="prod-grid prod-grid--4">
+
+          <div class="prod-card">
+            <div class="prod-card__image-wrap">
+              <img
+                class="prod-card__image"
+                src="assets/images/editor.jpg"
+                alt="Cinematographer"
+                loading="lazy"
+              />
+            </div>
+            <p class="prod-card__name">Mhyla Ocumen</p>
+            <p class="prod-card__role">Cinematographer 1</p>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card__image-wrap">
+              <img
+                class="prod-card__image"
+                src="assets/images/amoNiMaraSaWork2.jpg"
+                alt="Cinematographer"
+                loading="lazy"
+              />
+            </div>
+            <p class="prod-card__name">Cristine Joy Florendo</p>
+            <p class="prod-card__role">Cinematographer 2</p>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card__image-wrap">
+              <img
+                class="prod-card__image"
+                src="assets/images/mabaitNaTita.jpg"
+                alt="Cinematographer"
+                loading="lazy"
+              />
+            </div>
+            <p class="prod-card__name">Pauline Medrano</p>
+            <p class="prod-card__role">Cinematographer 3</p>
+          </div>
+        </div>
+        </div>
+
+      <!-- Web Developer -->        
+      <div class="prod-group reveal">
+        <p class="prod-group__label">Web Developer</p>
+        <div class="prod-grid prod-grid--4">
+
+          <div class="prod-card">
+            <div class="prod-card__image-wrap">
+              <img
+                class="prod-card__image"
+                src="assets/images/tatay.jpg"
+                alt="Web Developer"
+                loading="lazy"
+              />
+            </div>
+            <p class="prod-card__name">Lewis Alfred Tinio</p>
+            <p class="prod-card__role">Web Developer</p>
+          </div>
+        </div>
+    </section>
+
+    <div class="section-divider reveal" aria-hidden="true">
+      <div class="section-divider__line"></div>
+    </div>
+
+
+    <!-- Rolling Credits -->
+    <section class="credits-section" id="credits" aria-label="Mga Credits">
+
+      <div class="credits-section__fade-top"    aria-hidden="true"></div>
+      <div class="credits-section__fade-bottom" aria-hidden="true"></div>
+
+      <div class="credits-section__viewport">
+        <div class="credits-section__scroll">
+
+          <!-- Title block -->
+          <div class="credit-intro">
+            <h2 class="credit-intro__title">LATAY NG KARANGALAN</h2>
+            <p class="credit-intro__subtitle">Art Appreciation</p>
+          </div>
+
+          <div class="credit-divider" aria-hidden="true"></div>
+
+          <!-- Cast -->
+          <div class="credit-block">
+            <p class="credit-block__category">Pangunahing Cast</p>
+            <p class="credit-block__name">Maurene Callanta</p>
+            <p class="credit-block__role">as Mara</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Reynalyn Valenciana</p>
+            <p class="credit-block__role">as Lira</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Krisha Carpio</p>
+            <p class="credit-block__role">as Sarah</p>
+          </div>
+
+          <!-- Family -->
+          <div class="credit-block">
+            <p class="credit-block__name">L.A</p>
+            <p class="credit-block__role">as Daddy</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Jore</p>
+            <p class="credit-block__role">as Mama</p>
+          </div>
+
+          <div class="credit-divider" aria-hidden="true"></div>
+
+          <!-- Supporting cast -->
+          <div class="credit-block">
+            <p class="credit-block__category">Suporting Cast</p>
+            <p class="credit-block__name">Ayhecia Las Pinas</p>
+            <p class="credit-block__role">as Tita na nag-alok ng work</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Althea Escuadro</p>
+            <p class="credit-block__role">as Amo ni Mara sa work</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Pauline Medrano</p>
+            <p class="credit-block__role">as Mabait na tita</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Ericka Arata</p>
+            <p class="credit-block__role">as Bruha na tita</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Andrea Ponce</p>
+            <p class="credit-block__role">as Bruha na tita</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Laralaine Ocampo</p>
+            <p class="credit-block__role">as Anak ng bruha na tita</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Jillian Petacio</p>
+            <p class="credit-block__role">as Anak ng bruha na tita</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Mary Grace Ramos</p>
+            <p class="credit-block__role">as Anak ng bruha na tita</p>
+          </div>
+
+
+          <div class="credit-block">
+            <p class="credit-block__name">Lorie Fontanilla</p>
+            <p class="credit-block__role">as Anak ng mabait na tita</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Trisha Dela Cruz</p>
+            <p class="credit-block__role">as Anak ng mabait na tita</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Christine Florendo</p>
+            <p class="credit-block__role">as Amo ni Mara</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Rizza Gayla</p>
+            <p class="credit-block__role">as Anak ng amo ni Mara</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Mikaella Lagsilon</p>
+            <p class="credit-block__role">as Anak ng amo ni Mara</p>
+          </div>
+
+          <div class="credit-divider" aria-hidden="true"></div>
+
+          <!-- Production team -->
+          <div class="credit-block">
+            <p class="credit-block__category">Production Team</p>
+            <p class="credit-block__name">Jillian Petacio</p>
+            <p class="credit-block__role">Director</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Mhyla Ocumen</p>
+            <p class="credit-block__role">Director</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Mhyla Ocumen</p>
+            <p class="credit-block__role">Editor 1</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">L.A</p>
+            <p class="credit-block__role">Editor 2</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Maurene Callanta</p>
+            <p class="credit-block__role">Writer 1</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Krisha Joyce Carpio</p>
+            <p class="credit-block__role">Writer 2</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Reynalyn Valenciana</p>
+            <p class="credit-block__role">Writer 3</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Christine Joy Florendo</p>
+            <p class="credit-block__role">Writer 4</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Mhyla Ocumen</p>
+            <p class="credit-block__role">Writer 5</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Mhyla Ocumen</p>
+            <p class="credit-block__role">Cinematographer 1</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Pauline Medrano</p>
+            <p class="credit-block__role">Cinematographer 2</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">Christine Joy Florendo</p>
+            <p class="credit-block__role">Cinematographer 3</p>
+          </div>
+
+          <div class="credit-block">
+            <p class="credit-block__name">L.A</p>
+            <p class="credit-block__role">Web Developer</p>
+          </div>
+
+          <div class="credit-divider" aria-hidden="true"></div>
+
+          <!-- Thank you -->
+          <div class="credit-block">
+            <p class="credit-block__category">Pasasalamat</p>
+            <p class="credit-block__name">Sa lahat ng sumama, tumulong, at nagtiwala especially sa Parents ni Jillian</p>
+            <p class="credit-block__role">Maraming salamat po sa inyong oras, sakripisyo, at luhang inalay upang matapos ang film na ito.</p>
+          </div>
+
+          <div class="credit-divider" aria-hidden="true"></div>
+
+          <!-- End card -->
+          <p class="credit-end">THE END</p>
+
+          <p class="credit-final-quote">
+            "Nakakapagod din pala 'yung laging kailangang maging malakas.<br>
+            Minsan, gusto ko lang maging anak."<br><br>
+            — Mara
+          </p>
+
+          <!-- Seamless loop duplicate TO BE FIXED LATER (Currently just a duplicate of the above content, but will be restructured to create a seamless rolling effect) -->
+          <!--
+          <div style="margin-top: 5rem;">
+
+            <div class="credit-intro">
+              <h2 class="credit-intro__title">LATAY NG KARANGALAN</h2>
+              <p class="credit-intro__subtitle">Isang Pelikulang Filipino</p>
+            </div>
+
+            <div class="credit-divider" aria-hidden="true"></div>
+
+
+            <div class="credit-block">
+              <p class="credit-block__category">Pangunahing Cast</p>
+              <p class="credit-block__name">Mara · Lira · Sarah</p>
+              <p class="credit-block__role">Mga Pangunahing Tauhan</p>
+            </div>
+
+            <div class="credit-block">
+              <p class="credit-block__category">Pamilya</p>
+              <p class="credit-block__name">Tatay · Nanay</p>
+              <p class="credit-block__role">Mga Magulang</p>
+            </div>
+
+            <div class="credit-divider" aria-hidden="true"></div>
+
+            <div class="credit-block">
+              <p class="credit-block__category">Production Team</p>
+              <p class="credit-block__name">Director · Assistant Director</p>
+              <p class="credit-block__role">Mga Direktor</p>
+            </div>
+
+            <div class="credit-block">
+              <p class="credit-block__name">Editor 1 · Editor 2</p>
+              <p class="credit-block__role">Mga Editor</p>
+            </div>
+
+            <div class="credit-block">
+              <p class="credit-block__name">Videographer 1 · 2 · 3 · 4</p>
+              <p class="credit-block__role">Mga Videographer</p>
+            </div>
+
+            <div class="credit-divider" aria-hidden="true"></div>
+
+            <p class="credit-end">WAKAS · FIN · THE END</p>
+
+            <p class="credit-final-quote">
+              "Nakakapagod din pala 'yung laging kailangang maging malakas.<br>
+              Minsan, gusto ko lang maging anak." — Mara
+            </p>
+
+          </div>
+          -->
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+      <p class="site-footer__title">Latay ng Karangalan</p>
+      <p class="site-footer__text">Ginawa nang may puso at dedikasyon by GROUP PELM.</p>
+      <p class="site-footer__text">© All rights reserved 2026</p>
+    </footer>
+
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

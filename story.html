@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="Latay ng Karangalan — Buod ng kwento, mga eksena, at mga tauhan." />
+  <title>Kuwento &amp; Mga Tauhan — Latay ng Karangalan</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" role="navigation" aria-label="Pangunahing Navigation">
+
+    <div class="nav__logo">
+      Latay ng Karangalan
+      <span>Art Appreciation</span>
+    </div>
+
+    <button
+      class="nav__burger"
+      id="navBurger"
+      aria-label="Buksan ang menu"
+      aria-expanded="false"
+      aria-controls="navDrawer"
+    >
+      <span class="nav__burger-line"></span>
+      <span class="nav__burger-line"></span>
+      <span class="nav__burger-line"></span>
+    </button>
+
+  </nav>
+
+  <!-- Nav Drawer -->
+  <div class="nav__drawer" id="navDrawer" role="dialog" aria-label="Navigation Menu">
+
+    <span class="nav__section-label">Pages</span>
+
+    <a href="index.html" class="nav__link">
+      Home Page
+    </a>
+
+    <a href="story.html" class="nav__link">
+      Script &amp; Characters Page
+    </a>
+
+    <a href="production.html" class="nav__link">
+      Production Team Page
+    </a>
+
+    <div class="nav__drawer-divider"></div>
+    <span class="nav__section-label">Page Contents</span>
+
+    <a href="#synopsis" class="nav__link">
+      Synopsis
+    </a>
+
+    <a href="#scenes" class="nav__link">
+      Script
+    </a>
+
+    <a href="#characters" class="nav__link">
+      Characters
+    </a>
+
+  </div>
+
+  <!-- Nav Backdrop -->
+  <div class="nav__backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+
+  <!-- PAGE WRAPPER -->
+  <div class="page-wrapper">
+
+    <!-- Page Banner -->
+    <div class="page-banner" aria-label="Kuwento at Mga Tauhan">
+      <div class="page-banner__bg"      aria-hidden="true"></div>
+      <div class="page-banner__overlay" aria-hidden="true"></div>
+      <div class="page-banner__content">
+        <p class="page-banner__label">Page 2</p>
+        <h1 class="page-banner__title">Story &amp;<br>Characters</h1>
+      </div>
+    </div>
+
+    <!-- Page Tabs -->
+    <nav class="page-tabs" aria-label="Mga seksyon ng pahina">
+      <a href="#synopsis"   class="page-tab is-active">Synopsis</a>
+      <a href="#scenes"     class="page-tab">Script</a>
+      <a href="#characters" class="page-tab">Characters</a>
+    </nav>
+
+
+    <!-- SYNOPSIS SECTION -->
+    <section class="section" id="synopsis" aria-label="Buod ng Kuwento">
+
+      <header class="section__header reveal">
+        <p class="section__eyebrow">Synopsis</p>
+        <h2 class="section__title">Latay Ng Karangalan</h2>
+        <div class="section__ornament" aria-hidden="true">
+          <div class="orn-line"></div>
+          <div class="orn-diamond"></div>
+          <div class="orn-line orn-line--rev"></div>
+        </div>
+      </header>
+
+      <div class="synopsis-body reveal">
+
+        <blockquote class="synopsis-quote">
+          "Hindi lahat ng Cum Laude, panalo sa buhay."
+        </blockquote>
+
+        <p class="drop-cap">
+          Si <strong>Mara</strong> ay nagtapos bilang isang Cum Laude na siyang inaasahang mag-aahon sa kanyang pamilya mula sa kahirapan. Ngunit sa kabila ng kanyang mga karangalan, paulit-ulit siyang binibigo ng realidad. Walang tumatanggap sa kaniyang kumpanya, kundi kulang ang kaniyang mga karanasan na tumuloy sa kakulangan niya sa oportunidad at hindi sapat ang kanyang diploma upang matugunan ang pangangailangan ng kanyang pamilya. Bilang panganay, pinipili niyang isakripisyo ang sarili, tinatago ang kanyang gutom, pagod, at kabiguan.
+        </p>
+
+        <p>
+          Sa desperasyon, tinanggap niya ang isang trabahong malayo sa kanyang pinagaralan at nagsinungaling sa kanyang pamilya upang mapanatili ang kanilang pag-asang siya ang tatapos sa kahirapang mayroon sila. Ngunit habang tumatagal, lumalalim ang sugat sa loob ng kanilang tahanan naiipon ang inggit, tampo, at hindi pagkakaunawaan. Hanggang sa isang pangyayaring hindi inaasahan ang magbubunyag ng katotohanan, magpapasabog ng emosyon, at susubok sa tibay ng kanilang samahan bilang pamilya.
+        </p>
+
+        <p>
+          Kapag ang inaasahang mag-aahon ang siyang unti-unting nalulunod, paano niya muling iaangat ang sarili?
+        </p>
+
+        <p>
+          Hanggang kailan niya kakayaning itago ang katotohanan?
+        </p>
+        
+        <p>
+          Sa gitna ng bigat ng responsibilidad, may matitira pa bang 'siya' para sa sarili niya?
+        </p>
+        
+        <p>
+          At kapag bumigay ang pag-asa ng pamilya, sino ang sasalo sa kanya?
+        </p>
+        
+      </div>
+
+    </section>
+
+    <div class="section-divider reveal" aria-hidden="true">
+      <div class="section-divider__line"></div>
+    </div>
+
+
+    <!-- SCENES SECTION -->
+    <section class="section" id="scenes" aria-label="Mga Piling Eksena">
+
+      <header class="section__header reveal">
+        <p class="section__eyebrow">Mula sa Pelikula</p>
+        <h2 class="section__title">Script</h2>
+        <div class="section__ornament" aria-hidden="true">
+          <div class="orn-line"></div>
+          <div class="orn-diamond"></div>
+          <div class="orn-line orn-line--rev"></div>
+        </div>
+      </header>
+
+      <article class="scene-card reveal">
+        <p class="scene-card__number">SCENE 1</p>
+        <p class="scene-card__desc">
+          Si Mara ang "shock absorber" ng pamilya. Siya ang unang nakakaalam kapag putol na ang kuryente, siya ang huling kumakain, at siya ang nagtatago ng sariling pagod para hindi panghinaan ng loob ang mga kapatid niya.
+        </p>
+        <div class="scene-card__dialog">
+          <strong>Lira:</strong> <em>(Mula sa mesa, may sinding maliit na kandila)</em> "Ate? Buti nakauwi ka na. Kanina pa tayong alas-singko walang ilaw. Sabi ni Tatay baka may pumutok lang na transformer sa kanto."
+          <br><br>
+          <strong>MARA:</strong> <em>(Pipiliting maging mahinahon ang boses)</em> "Ah, oo... Nakasalubong ko 'yung mga taga-Meralco/NEECO sa labas. May inaayos lang silang linya. Bukas na bukas, babalik din 'yan. Huwag ka nang mag-alala."
+          <br><br>
+          <strong>TATAY:</strong> "Anak, kumain ka na ba? May konting ulam pa doon sa plato, itinabi namin para sa’yo."
+          <br><br>
+          <strong>MARA:</strong> <em>(Titingnan ang mesa—isang tuyo na lang ang natitira at kaunting kanin)</em> "Busog pa ako, Tay. Pinakain kami ng supervisor ko sa mall dahil maganda ang benta. Sara, Lira... ubusin niyo na 'yan. Sayang naman."
+          <br><br>
+          <strong>SARA:</strong> <em>(Mapapatingin kay Mara, alam na nagsisinungaling ang Ate niya)</em> "Ate, kanina ka pa umalis. Alam kong hindi ka pa kumakain. Hati na tayo dito."
+          <br><br>
+          <strong>MARA:</strong> <em>(Mariin pero nakangiti)</em> "Sara, sabi nang busog ako, eh. Iyo na 'yan, kailangan mo ng lakas bukas sa pagde-deliver. Sige na, ubusin niyo na para makapagpahinga na kayo."
+          <br><br>
+          <strong>MARA:</strong> "Tay, inumin mo na 'yung gamot mo. 'Wag mong iisipin 'yung kuryente. Ako nang bahala doon. Basta magpahinga ka lang, ha?"
+          <br><br>
+          <strong>TATAY:</strong> <em>(Hahawakan ang kamay ni Mara)</em> "Salamat, anak. Napaka-swerte namin sa’yo. Hindi ko alam kung anong gagawin namin kung wala ka."
+      </article>
+
+      <article class="scene-card reveal">
+        <p class="scene-card__number">SCENE 2</p>
+        <p class="scene-card__desc">
+          Proud na proud ang mga magulang dahil Cum Laude si Mara. Isasabit ni tatay ang framed diploma ni Mara sa dingding na yari sa plywood. Pero sa likod ng saya, ipapakita ang hirap: naghahati sila sa isang maliit na sardinas para sa hapunan, at bibilangin ni tatay ang barya sa kanyang pitaka
+        </p>
+        <div class="scene-card__dialog">
+          <strong>TATAY:</strong> (Maingat na ipinupukpok ang pako sa plywood) "Ayan... gitnang-gitna. Para pagpasok pa lang ng mga bisita, makikita agad nila: Mara—Cum Laude. Sulit lahat ng pagod natin, 'no?"
+          <br><br>
+          <strong>NANAY:</strong> (Nakangiti pero may bahid ng pagod) "Oo naman. 'Yan ang tanging yaman nating hindi mananakaw ng utang. Mara, anak, halika na rito. Ikaw ang uuna, kumuha ka na ng ulam."
+          <br><br>
+          <strong>MARA:</strong> (Lalapit sa hapag, titingnan ang maliit na bowl ng sardinas) "Nay, Tay... hati-hati na tayo rito. Marami pa namang sabaw, kasya na sa ating lima 'yan."
+          <br><br>
+          <strong>TATAY:</strong> (Dudukutin ang pitaka, ilalabas ang ilang barya at lukot na bente) "Huwag kang mag-alala, anak. Sa susunod na linggo, kapag nakaluwag-luwag sa pasada, mag-a-Adobo tayo. Sa ngayon, pagtiyagaan muna natin 'to. Ang mahalaga, tapos ka na. Sigurado akong bukas-makalawa, magandang opisina na ang bagsak mo."
+          <br><br>
+          <strong>MARA:</strong> (Pilit ang ngiti, titingnan ang Tatay na palihim na binibilang ang barya para sa bukas) "Opo, Tay. Malaking tulong na 'to. Salamat po."
+        </div>
+      </article>
+
+      <article class="scene-card reveal">
+        <p class="scene-card__number">SCENE 3</p>
+        <p class="scene-card__desc">
+          Ipapakita ang araw-araw na routine ni Mara. 
+        </p>
+        <div class="scene-card__dialog">
+          <strong>MARA:</strong> (Sa sarili, habang tinitingnan ang huling piraso ng itlog sa tray) "Isa na lang 'to. Ibibigay ko na lang kina Lira at Sara. Magkakape na lang ako, kasya na 'to sa akin."
+(Papasok si SARA, kinukuskos ang mga mata, halatang bagong gising at bugnutin.)
+          <br><br>
+          <strong>SARA:</strong> "Ate, wala na bang toothpaste? Pinipiga ko na 'yung tube, wala talagang lumalabas."
+          <br><br>
+          <strong>MARA:</strong> (Kalmado) "Nilagyan ko ng konting tubig kagabi para may magamit pa kayo ngayon. Hati muna kayo ni Lira ha? Sa Sabado pa ang sahod ni Tatay, bibili ako agad."
+          <br><br>
+          <strong>SARA:</strong> "Lagi namang 'sa Sabado' eh. Tapos 'yung project ko sa Science, Ate... kailangan daw ng cartolina at glue. Ngayon na ipapasa."
+          <br><br>
+          <strong>MARA:</strong> (Sandaling natigilan, iniisip ang barya sa bulsa) "Sige, gawan natin ng paraan. May natabi pa akong sampung piso rito para sa pamasahe ko sana, pero lalakarin ko na lang hanggang kanto. Kunin mo na doon sa ibabaw ng TV."
+          <br><br>
+          <strong>LIRA:</strong> "Ate Mara! 'Yung uniform ko, may mantsa pa rin! Hindi natanggal kahapon!"
+          <br><br>
+          <strong>MARA:</strong> (Lalapit kay Lira at kukunin ang polo) "Akin na, Lira. Ako na ang magkukuskos niyan sa banyo. Maupo na kayo rito, kumain na kayo. Hatiin niyo 'yung itlog ha? Huwag niyo nang gisingin si Nanay at Tatay, hayaan niyo muna silang magpahinga, puyat sila sa pasada kagabi."
+          <br><br>
+          <strong>LIRA:</strong> "Eh ikaw Ate? Hindi ka ba kakain? Sabay ka na sa amin."
+          <br><br>
+          <strong>MARA:</strong> (Nakangiti pero pagod ang mga mata) "Busog pa ako. Uminom na ako ng maraming tubig. Bilisan niyo na riyan, baka mahuli kayo sa school. Lira, 'yung sapatos mo, nilagyan ko na ng pandikit 'yung swelas na bumubuka, wag mo munang itatakbo para hindi kumalas agad."
+          <br><br>
+          <strong>SARA:</strong> (Pabulong) "Buti ka pa Ate, tapos ka na mag-aral. Cum Laude ka pa. Siguro pag may trabaho ka na, hindi na tayo ganito, 'no?"
+          <br><br>
+          <strong>MARA:</strong> (Hihinga nang malalim habang sinasabit ang basang uniform ni Lira sa tapat ng electric fan) "Kaya nga kailangan nating magtiis muna ngayon. Magiging maayos din ang lahat. O, s'ya, tapusin niyo na 'yan. Ako na ang magliligpit ng pinagkainan niyo."
+        </div>
+      </article>
+
+      <article class="scene-card reveal">
+        <p class="scene-card__number">Want to access the full script?</p>
+        <p class="scene-card__desc">
+          Then click this link to access the full script: <a href="latayNgKarangalan.docx" download="latayNgKarangalan.docx" class="colorChange">Latay ng Karangalan Script</a>
+        </p>
+      </article>
+
+      <!-- Scene 1 
+      <article class="scene-card reveal">
+        <p class="scene-card__number">Scene 1 &nbsp;·&nbsp; Ang Shock Absorber</p>
+        <p class="scene-card__desc">
+          Sa dilim ng bahay, isang kandila lang ang ilaw. Uuwi si Mara pagod — ngunit
+          magpapanggap siyang busog para may makain ang mga kapatid niya.
+        </p>
+        <div class="scene-card__dialog">
+          <strong>MARA:</strong> "Busog pa ako, Tay. Pinakain kami ng supervisor ko sa mall
+          dahil maganda ang benta. Sara, Lira... ubusin niyo na 'yan. Sayang naman."
+          <br><br>
+          <strong>SARA:</strong> <em>(mapapatingin kay Mara, alam na nagsisinungaling ang Ate niya)</em>
+          "Ate, kanina ka pa umalis. Alam kong hindi ka pa kumakain. Hati na tayo dito."
+        </div>
+      </article>
+
+       Scene 2 
+      <article class="scene-card reveal">
+        <p class="scene-card__number">Scene 2 &nbsp;·&nbsp; Ang Diploma</p>
+        <p class="scene-card__desc">
+          Proud na proud ang mga magulang nang isabit ang framed diploma sa plywood na
+          dingding — habang naghahatian sila ng isang lata ng sardinas para sa hapunan.
+        </p>
+        <div class="scene-card__dialog">
+          <strong>TATAY:</strong> <em>(maingat na ipinupukpok ang pako sa plywood)</em>
+          "Ayan... gitnang-gitna. Para pagpasok pa lang ng mga bisita, makikita agad nila:
+          Mara — Cum Laude. Sulit lahat ng pagod natin, 'no?"
+          <br><br>
+          <strong>NANAY:</strong> "Oo naman. 'Yan ang tanging yaman nating hindi mananakaw
+          ng utang."
+        </div>
+      </article>
+
+       Scene 3 
+      <article class="scene-card reveal">
+        <p class="scene-card__number">Scene 3 &nbsp;·&nbsp; Ang Umaga</p>
+        <p class="scene-card__desc">
+          Ipinakita ang araw-araw na routine ni Mara. Madilim pa sa labas, nagpapainit ng
+          kape at naghahanda ng tuyo — ibinibigay ang huling itlog sa mga kapatid.
+        </p>
+        <div class="scene-card__dialog">
+          <strong>MARA:</strong> <em>(sa sarili)</em> "Isa na lang 'to. Ibibigay ko na lang
+          kina Lira at Sara. Magkakape na lang ako, kasya na 'to sa akin."
+          <br><br>
+          <strong>LIRA:</strong> "Ate Mara! 'Yung uniform ko, may mantsa pa rin! Hindi
+          natanggal kahapon!"
+        </div>
+      </article>
+
+       Scene 5 
+      <article class="scene-card reveal">
+        <p class="scene-card__number">Scene 5 &nbsp;·&nbsp; Ang Huling Piso</p>
+        <p class="scene-card__desc">
+          Hinihingi ng dalawang kapatid ang pera para sa school projects. Ibibigay ni Mara
+          ang kanyang huling piso — ang pang-pamasahe niya para bukas.
+        </p>
+        <div class="scene-card__dialog">
+          <strong>LIRA:</strong> "Alam mo, Ate, akala ko ba ikaw na 'yung pag-asa natin?
+          Cum Laude ka pa naman. Bakit parang... wala pa ring nagbago?"
+          <br><br>
+          <strong>MARA:</strong> <em>(matatahimik, mapapayuko)</em>
+          "Naghahanap pa ako ng trabaho."
+          <br><br>
+          <strong>LIRA:</strong> "Puro nalang naghahanap. Ano pa ang purpose ng pagiging
+          Cum Laude mo kung hindi ka pa rin makahanap ng trabaho?"
+        </div>
+      </article>
+
+       Scene 6 
+      <article class="scene-card reveal">
+        <p class="scene-card__number">Scene 6 &nbsp;·&nbsp; Ang Bigat ng Diploma</p>
+        <p class="scene-card__desc">
+          Uuwi si Mara nang walang trabaho, naglalakad dahil kulang ang 40 pesos na
+          pamasahe. Sa kwarto, haharapin niya ang kanyang repleksyon at ang diploma
+          sa dingding.
+        </p>
+        <div class="scene-card__dialog">
+          <strong>MARA:</strong> <em>(sa sarili)</em>
+          "Sana kasing bilis din tumaas ng presyo ng gas ang pagkakataon kong makahanap
+          ng trabaho."
+          <br><br>
+          "'Nay, Tay, sorry... Hindi ko alam kung paano ko pa sasabihin na isa na namang
+          paghihintay ang binigay nilang resulta sa akin."
+        </div>
+      </article>
+
+       Scene 8 
+      <article class="scene-card reveal">
+        <p class="scene-card__number">Scene 8 &nbsp;·&nbsp; Ang Katotohanan ng mga Magulang</p>
+        <p class="scene-card__desc">
+          Makikita ni Mara si Tatay na hinihimas ang dibdib — tanda ng sakit sa puso —
+          habang nagbibilang ng barya. Maririnig niyang pag-uusapan ang pagbebenta ng
+          tricycle para sa utang.
+        </p>
+        <div class="scene-card__dialog">
+          <strong>NANAY:</strong> "Sabi kasi sayo e, wag masyadong mag-pagod sa pamamasada."
+          <br><br>
+          <strong>TATAY:</strong> "Eh kung di ako mamasada, anong mangyayari satin? Tambak
+          na tayo sa gastusin, baon pa tayo sa utang."
+          <br><br>
+          <strong>NANAY:</strong> "Eh paano nga? Kung ibenta kaya natin yang tricycle ng
+          makabawas man lang?"
+        </div>
+      </article>
+
+       Scene 12 
+      <article class="scene-card reveal">
+        <p class="scene-card__number">Scene 12 &nbsp;·&nbsp; Ang Katotohanan — Huling Eksena</p>
+        <p class="scene-card__desc">
+          Sa isang gabi ng katahimikan pagkatapos ng reunion, sasabog ang lahat.
+          Bibitawin ni Mara ang lahat ng natagal niyang pinigilan — ang pinaka-mahalageng
+          linya ng pelikula.
+        </p>
+        <div class="scene-card__dialog">
+          <strong>MARA:</strong>
+          "Nakakapagod din pala 'yung laging kailangang maging malakas. Minsan, gusto ko
+          lang maging anak. Gusto ko lang maranasan 'yung mag-uwi ng sahod na para sa akin
+          naman. Pero kapag nakikita ko si Tatay na hirap huminga... at sina Sara at Lira na
+          umaasa sa akin... kinakalimutan ko na lang na may sarili pala akong buhay."
+        </div>
+      </article> -->
+
+    </section>
+
+    <div class="section-divider reveal" aria-hidden="true">
+      <div class="section-divider__line"></div>
+    </div>
+
+
+    <!-- CHARACTERS SECTION -->
+    <section class="section" id="characters" aria-label="Mga Tauhan">
+
+      <header class="section__header reveal">
+        <p class="section__eyebrow">Ang mga naggaagandahang binibini na nagbibigay-Buhay sa Kwento</p>
+        <h2 class="section__title">Characters</h2>
+        <div class="section__ornament" aria-hidden="true">
+          <div class="orn-line"></div>
+          <div class="orn-diamond"></div>
+          <div class="orn-line orn-line--rev"></div>
+        </div>
+      </header>
+
+      <div class="char-grid">
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/mara.jpg" alt="Mara" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Mara</p>
+            <p class="char-card__role">Maurene Callanta</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/lira.jpg" alt="Lira" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Lira</p>
+            <p class="char-card__role">Reynalyn Valenciana</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/sara.jpg" alt="Sarah" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Sarah</p>
+            <p class="char-card__role">Krisha Joyce Carpio</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/tatay.jpg" alt="Tatay" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Tatay</p>
+            <p class="char-card__role">Lewis Alfred Tinio</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/nanay.jpg" alt="Nanay" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Nanay</p>
+            <p class="char-card__role">Jorriza Mae Talania</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/titaNaNagAalok.jpg" alt="Tita na Nag-aalok" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Tita 1</p>
+            <p class="char-card__role">Ayhecia Las Pinas</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/mabaitNaTita.jpg" alt="Mabait na Tita" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Mabait na Tita</p>
+            <p class="char-card__role">Pauline Medrano</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/amoNiMaraSaWork2.jpg" alt="Amo ni Mara 1" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Amo ni Mara 1</p>
+            <p class="char-card__role">Christine Joy Florendo</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/amoNiMaraSaWork.jpg" alt="Amo ni Mara 2" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Amo ni Mara 2</p>
+            <p class="char-card__role">Althea Escuadro</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/bruhaNaTita.jpg" alt="Bruha 1" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Bruha na Tita 1</p>
+            <p class="char-card__role">Princess Ericka Arata</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/bruhaNaTita2.jpg" alt="Bruha 2" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Bruha na Tita 2</p>
+            <p class="char-card__role">Andrea Ponce</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/anakNgAmo.jpg" alt="Anak ng Amo 1" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Anak ng Amo 1</p>
+            <p class="char-card__role">Rizza Gayla</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/anakNgAmo2.jpg" alt="Anak ng Amo 2" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Anak ng Amo 2</p>
+            <p class="char-card__role">Mikaela Lagsilon</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/anakNgBruha.jpg" alt="Anak ng Bruha 1" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Anak ng Bruha 1</p>
+            <p class="char-card__role">Jillian Petacio</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/anakNgBruha2.jpg" alt="Anak ng Bruha 2" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Anak ng Bruha 2</p>
+            <p class="char-card__role">Mary Grace Ramos</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/anakNgBruha3.jpg" alt="Anak ng Bruha 3" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Anak ng Bruha 3</p>
+            <p class="char-card__role">Laralaine Ocampo</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/anakNgMabaitNaTita.jpg" alt="Anak ng Mabait na Tita" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Anak ng Tita</p>
+            <p class="char-card__role">Lorie Fontanilla</p>
+          </div>
+        </div>
+
+        <div class="char-card reveal">
+          <img class="char-card__image" src="assets/images/anakNgMabaitNaTita2.jpg" alt="Anak ng Mabait na Tita" loading="lazy" />
+          <div class="char-card__gradient" aria-hidden="true"></div>
+          <div class="char-card__info">
+            <p class="char-card__name">Anak ng Tita 2</p>
+            <p class="char-card__role">Trisha Mae Dela Cruz</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+      <p class="site-footer__title">Latay ng Karangalan</p>
+      <p class="site-footer__text">Ginawa nang may puso at dedikasyon by GROUP PELM.</p>
+      <p class="site-footer__text">© All rights reserved 2026</p>
+    </footer>
+
+  </div>
+
+
+  <!-- Shared Script -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>

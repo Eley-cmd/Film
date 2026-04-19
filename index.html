@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="Latay ng Karangalan — Isang Pelikulang Filipino tungkol sa sakripisyo ng pamilya." />
+  <title>Latay ng Karangalan</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="hero-active">
+
+  <!-- Navigation links -->
+  <nav class="nav" role="navigation" aria-label="Pangunahing Navigation">
+
+    <div class="nav__logo">
+      Latay ng Karangalan
+      <span>Art Appreciation</span>
+    </div>
+
+    <button
+      class="nav__burger"
+      id="navBurger"
+      aria-label="Buksan ang menu"
+      aria-expanded="false"
+      aria-controls="navDrawer"
+    >
+      <span class="nav__burger-line"></span>
+      <span class="nav__burger-line"></span>
+      <span class="nav__burger-line"></span>
+    </button>
+
+  </nav>
+
+  <!-- Nav Drawer -->
+  <div class="nav__drawer" id="navDrawer" role="dialog" aria-label="Navigation Menu">
+
+    <span class="nav__section-label">Page</span>
+
+    <a href="index.html" class="nav__link">
+      Home Page
+    </a>
+
+    <a href="story.html" class="nav__link">
+      Script &amp; Characters Page
+    </a>
+
+    <a href="production.html" class="nav__link">
+      Production Team Page
+    </a>
+
+    <div class="nav__drawer-divider"></div>
+    <span class="nav__section-label">Page Contents</span>
+
+    <a href="#video" class="nav__link" data-target="video">
+      Click to Watch the Movie
+    </a>
+
+  </div>
+
+  <!-- Nav Backdrop -->
+  <div class="nav__backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+
+  <!-- HERO — Fullscreen Entry -->
+  <div class="hero" id="hero" role="banner">
+
+    <!-- Background layers -->
+    <div class="hero__bg"       aria-hidden="true"></div>
+    <div class="hero__overlay"  aria-hidden="true"></div>
+    <div class="hero__vignette" aria-hidden="true"></div>
+    <div class="hero__accent-line" aria-hidden="true"></div>
+
+    <!-- Hero content -->
+    <div class="hero__content">
+      <p class="hero__eyebrow">Isang Pelikulang Filipino</p>
+      <div class="hero__rule" aria-hidden="true"></div>
+      <h1 class="hero__title">
+        LATAY NG
+        <em>KARANGALAN</em>
+      </h1>
+
+      <p class="hero__subtitle">
+        "Nakakapagod din pala 'yung laging kailangang<br>
+        maging malakas. Minsan, gusto ko lang maging anak."
+      </p>
+
+      <div class="hero__rule-sm" aria-hidden="true"></div>
+
+      <div class="hero__cta">
+        <button class="btn btn--primary" id="watchBtn">
+          <span>▶ &nbsp;Click to Watch the Movie</span>
+        </button>
+      </div>
+
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <div class="hero__scroll-chevron"></div>
+    </div>
+
+  </div>
+
+
+  <!-- MAIN CONTENT (revealed after hero) -->
+
+  <div class="main-content" id="mainContent">
+
+    <section class="video-section" id="video" aria-label="Buong Pelikula">
+
+      <div class="video-topbar">
+        Latay ng Karangalan &nbsp;·&nbsp; Buong Pelikula
+      </div>
+
+      <div class="video-accent-line" aria-hidden="true"></div>
+
+      <div class="video-wrapper">
+        <video
+          id="mainVideo"
+          controls
+          playsinline
+          preload="metadata"
+          aria-label="Pelikula: Latay ng Karangalan"
+        >
+          <source src="assets/video/film.mp4" type="video/mp4" />
+          <p>Error pare! Hindi supported nung brower yung film HAHAHAHAHAH.</p>
+        </video>
+      </div>
+
+      <div class="video-accent-line" aria-hidden="true"></div>
+
+    </section>
+
+    <section class="section" style="text-align: center; padding-top: 3rem; padding-bottom: 3rem;">
+      <p class="reveal" style="font-style: italic; color: var(--clr-text-muted); margin-bottom: 1.5rem; font-size: 1.05rem;">
+        More about the story, characters, and the people behind this film! Click the buttons below to explore. :)
+      </p>
+      <div class="reveal" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="story.html" class="btn btn--outline">
+          <span>&nbsp;Story &amp; Characters</span>
+        </a>
+        <a href="production.html" class="btn btn--outline">
+          <span>&nbsp; Production Team </span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p class="site-footer__title">Latay ng Karangalan</p>
+      <p class="site-footer__text">Ginawa nang may puso at dedikasyon by GROUP PELM.</p>
+      <p class="site-footer__text">© All rights reserved 2026</p>
+    </footer>
+
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
