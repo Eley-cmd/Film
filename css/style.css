@@ -1200,6 +1200,7 @@ body.hero-active {
   color: var(--clr-amber);
 }
 
+/*
 
 .video-wrapper {
         position: relative;
@@ -1216,3 +1217,39 @@ body.hero-active {
         width: 100%;
         height: 100%;
     }
+        */
+/* Para sa lahat ng screen (Desktop & Mobile) */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    /* Sa halip na fixed height, gamitin ang aspect ratio (16:9) */
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    border-radius: 8px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media screen and (max-width: 375px) {
+    .container, .section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    .video-wrapper {
+        margin: 0 auto;
+        width: 100% !important;
+    }
+}
