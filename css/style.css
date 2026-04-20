@@ -669,7 +669,7 @@ body::before {
   object-fit: cover;
   display: block;
   filter: sepia(10%) contrast(1.06) brightness(0.95);
-  transition: transform 1s var(--ease-smooth), filter 0.4s var(--ease-smooth);
+  transition: transform 1.2s var(--ease-smooth), filter 0.4s var(--ease-smooth);
 }
 
 .char-card:hover .char-card__image {
