@@ -69,14 +69,13 @@ const Navigation = (() => {
 /* 2. HERO TRANSITION (index.html only) */
 const HeroTransition = (() => {
 
-  const hero        = document.getElementById('hero');
-  const mainContent = document.getElementById('mainContent');
-  const watchBtn    = document.getElementById('watchBtn');
-  const mainVideo   = document.getElementById('mainVideo');
+  const hero         = document.getElementById('hero');
+  const mainContent  = document.getElementById('mainContent');
+  const watchBtn     = document.getElementById('watchBtn');
+  const mainVideo    = document.getElementById('mainVideo'); 
 
   if (!hero || !watchBtn) return;
 
-  /* Fade out hero, reveal main content, autoplay video */
   function activate() {
     hero.classList.add('is-hidden');
     document.body.classList.remove('hero-active');
@@ -85,15 +84,15 @@ const HeroTransition = (() => {
       mainContent.classList.add('is-visible');
     }
 
-    // After transition completes, remove from DOM flow and attempt autoplay
     setTimeout(() => {
       hero.style.display = 'none';
 
       if (mainVideo) {
-        mainVideo.play().catch(() => {
-          // Autoplay blocked — browser requires user interaction (expected on mobile)
-          console.info('Autoplay blocked — user must press play manually.');
-        });
+        // TRICK: I-reset ang SRC para pilitin si Google na mag-load
+        // Pero tanggapin natin na si Google Drive ay laging nangangailangan ng 
+        // ISANG CLICK mula sa user bago mag-play dahil sa security policy nila.
+        const driveSrc = "https://drive.google.com/file/d/1ldn1IRUiGQsKL-PqF2QYCNshB--6V3Fw/preview?autoplay=1";
+        mainVideo.src = driveSrc;
       }
     }, 1500);
   }
@@ -101,7 +100,6 @@ const HeroTransition = (() => {
   watchBtn.addEventListener('click', activate);
 
   return { activate };
-
 })();
 
 

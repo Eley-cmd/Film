@@ -1199,3 +1199,20 @@ body.hero-active {
   text-decoration: underline;
   color: var(--clr-amber);
 }
+
+
+.video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 8px;
+        background: #000;
+    } 
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
