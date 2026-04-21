@@ -84,15 +84,18 @@ const HeroTransition = (() => {
       mainContent.classList.add('is-visible');
     }
 
+    // transition duration (1.5s)
     setTimeout(() => {
       hero.style.display = 'none';
 
       if (mainVideo) {
-        // TRICK: I-reset ang SRC para pilitin si Google na mag-load
-        // Pero tanggapin natin na si Google Drive ay laging nangangailangan ng 
-        // ISANG CLICK mula sa user bago mag-play dahil sa security policy nila.
-        const driveSrc = "https://drive.google.com/file/d/1ldn1IRUiGQsKL-PqF2QYCNshB--6V3Fw/preview?autoplay=1";
-        mainVideo.src = driveSrc;
+        // FIXED FOR YOUTUBE: 
+        // 1. Gagamit tayo ng embed URL format.
+        // 2. autoplay=1 para mag-play agad.
+        // 3. mute=1 para payagan ng browser ang autoplay.
+        // 4. rel=0 para hindi magpakita ng ibang video sa dulo.
+        const ytEmbed = "https://www.youtube.com/embed/aAmEFXGwHpk?autoplay=1&mute=1&rel=0&enablejsapi=1";
+        mainVideo.src = ytEmbed;
       }
     }, 1500);
   }
